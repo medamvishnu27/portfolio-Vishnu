@@ -1,0 +1,514 @@
+*{
+  padding: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position:fixed; /* Fixed position */
+  top: 0;
+  width: 100%;
+  z-index: 100;      /* Ensure it's on top */
+  background-color:transparent; /* Or your preferred background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+     
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Title color */ 
+    text-decoration: none; 
+  }
+  .navbar-brand{
+    background: goldenrod;
+background: linear-gradient(to right, goldenrod 50%, #CFCCC8 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bolder;
+
+
+
+  }
+  .navbar-img{
+    width: 30px;
+  } 
+
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-weight: bold;
+    
+}
+
+.language-button {
+    background-color: transparent;
+    border: none;
+    color: #333; /* Button color */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Active link styles */
+.active-link {
+    color: #0e0e0f; /* Change to desired active link color */
+    border-bottom: 2px solid #007bff; /* Underline effect */
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        background-color: #f8f9fa; /* Match navbar background */
+        width: 100%; /* Full width */
+         /* Debugging border */
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+
+    .navbar-links.open {
+        display: flex; /* Show links when open */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+}
+@media (min-width:1200px) {
+    .navbar-links{
+        margin-right: 300px;
+        gap: 40px;
+
+    }
+    .navbar-title{
+        margin-left: 300px;
+    }
+
+    
+}
+
+
+
+
+
+/* Project Card Styles */
+.project-cards {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content:space-around; /* Space out the cards */
+}
+.about-title-name{
+  background:goldenrod;
+background: linear-gradient(to right, goldenrod 80%, #CFCCC8 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bolder;
+}
+
+.project-card {
+    background-color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+    /* border-radius: 10px; */
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Three cards per row with spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: -12px 7px 0px 4px  #f0c040; /* Enhanced shadow on hover */
+}
+
+.project-card h3 {
+    background-color: #f0c040; /* Yellow background for title */
+    color: #333; /* Title color */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-details {
+    margin: 10px -15px;
+}
+
+.project-details span {
+    
+    margin-right: 10px;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    padding: 10px;
+    background-color: #fff; /* Light background for tech tags */
+    border-radius: 50px;
+}
+
+.link-buttons {
+    display: flex;
+    justify-content: end;
+   
+}
+
+.link-buttons a {
+    text-decoration: none;
+    color: black; /* Link color */
+    border: 1px solid black; /* Border for buttons */
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.link-buttons a:hover {
+    background-color: black; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: none; */
+    
+    
+    
+
+}
+
+.category-btn:hover{
+    
+    text-decoration: underline;
+
+}
+
+.title-project{
+    font-size: 44px;
+    font-weight: bolder;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* One card per row on very small screens */
+    }
+}
+
+
+/* contact us section stylings */
+.contact-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly space cards */
+    margin-top: 30px;
+  }
+  
+  .form-card {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 40%;
+  }
+  .form-right{
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0,0,0.1);
+    width: 20%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align:start;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    align-items: start;
+    
+  }
+  
+  .contact-btn {
+    background-color: #f0c808; /* Yellow color */
+    color: #fff;
+    padding: 20px 100px 20px 100px;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .form-card {
+      width: 100%;
+    
+    }
+    .form-right{
+        width: 100%;
+    }
+    .contact-btn{
+        padding: 10px;
+    }
+  }
+
+
+  /* Footer styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+  }
+  
+  .social-media-links a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px; /* Icon size */
+    
+  }
+  .social-media-links a:hover{
+    color: #f0c808;
+    
+
+  
+
+  }
+  
+  .copyright {
+    font-size: 14px; /* Copyright text size */
+  }
+
+  /* certicate styling section */
+  .certificates-section {
+    text-align: center;
+    margin: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .cer-card {
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .certificate-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    position: relative;
+  }
+  
+  .certificate-image:hover {
+    transform: rotateY(0deg) scale(1.05);
+    z-index: 1;
+  }
+  
+  .certificate-image:not(:hover) {
+    transform: rotateY(-20deg);
+    z-index: 0;
+  }
+  
+  /* Slick Slider Styles */
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+  }
+  
+  .slick-dots button:before {
+    font-size: 6px;
+    color: white;
+  }
+  
+  .slick-active button {
+    background-color: #007bff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cer-card {
+      width: 180px;
+    }
+  }
+
+
+
+
+
+
+
+  
+/* education section stylings */
+.education-section {
+  padding: 20px;
+  justify-content: center;
+  display: flex; /* Add flexbox for better alignment */
+  flex-direction: column; /* Make it vertical */
+  align-items: center; /* Center horizontally */
+}
+
+.education-carousel {
+  position: relative;
+  width: 100%; 
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hide overflowing cards */
+  perspective: 1000px; /* Enable 3D perspective for card rotation */
+}
+
+.education-card {
+  background-color: #fff;
+  border: 2px solid #f0c040; /* Yellow border */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Adjust width as needed */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d; /* Maintain 3D style on hover/transition */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* Space between card content and icon */
+}
+
+.education-card.active {
+  transform: translateZ(0); /* Bring active card to front */
+}
+
+.education-card:not(.active) {
+  transform: rotateY(90deg) translateX(100%); /* Rotate and position non-active cards */
+}
+
+.card-content {
+  flex: 1; /* Allow card content to take up most of the space */
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0c040; 
+  color: #fff;
+}
+
+.education-card h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.education-card p {
+  margin-bottom: 10px;
+}
+
+.education-card .year {
+  color: #f0c040;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education-card {
+    width: 80%; 
+  }
+}
+    

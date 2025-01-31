@@ -1,0 +1,104 @@
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.home-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%; /* Adjust as needed */
+}
+.Home-text-title{
+    background: goldenrod;
+    background: linear-gradient(to right, goldenrod 80%, #CFCCC8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-image {
+    width: 450px; /* Adjust size as needed */
+    border-radius: 40%; /* Circular image */
+    
+}
+
+.content-column {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .image-column {
+        margin-bottom: 20px; /* Space between image and content */
+    }
+
+    .user-image {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+    .contact-button{
+        margin-left: -20px;
+    }
+}
+
+.waving-hand {
+    font-size: 48px;
+    animation: wave 1s infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.contact-button, .resume-button {
+   
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+.contact-button:hover{
+    background-color:white;
+    color: #333;
+    border: 1px solid black;
+}
+
+.resume-button {
+    background-color: #007bff;
+    color: white;
+}
+.resume-button:hover{
+    background-color: white;
+    color: #007bff;
+    border:1px solid black
+}

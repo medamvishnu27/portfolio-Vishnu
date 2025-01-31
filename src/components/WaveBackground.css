@@ -1,0 +1,84 @@
+.wave-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f3f4f6, #ffffff);
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    transition: all 3s ease-in-out;
+}
+
+.shape::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    filter: blur(30px);
+}
+
+/* Add different initial positions for each shape */
+.shape:nth-child(1) {
+    top: -10%;
+    left: -10%;
+    background-color: #cc2222;
+}
+
+.shape:nth-child(2) {
+    top: 60%;
+    left: 60%;
+    background-color: #25d1c5;
+}
+
+.shape:nth-child(3) {
+    top: 40%;
+    left: 20%;
+    background-color: #21a6c4;
+}
+
+.shape:nth-child(4) {
+    top: 10%;
+    left: 70%;
+    background-color: #3ab179;
+}
+
+.shape:nth-child(5) {
+    top: 70%;
+    left: 30%;
+    background-color: #b7aa76;
+}
+
+/* Add animation for subtle continuous movement */
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(20px, 20px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+.shape {
+    animation: float 20s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Stagger the animations for each shape */
+.shape:nth-child(1) { animation-delay: 0s; }
+.shape:nth-child(2) { animation-delay: 4s; }
+.shape:nth-child(3) { animation-delay: 8s; }
+.shape:nth-child(4) { animation-delay: 12s; }
+.shape:nth-child(5) { animation-delay: 16s; }
