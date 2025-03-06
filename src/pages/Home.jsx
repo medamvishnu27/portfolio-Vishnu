@@ -45,8 +45,7 @@ const Home = () => {
             <div className="home mx-5" data-aos="fade-down">
                 <div className="home-container">
                     <div className="image-column mx-5">
-                        <img src={profilepic} alt="User" srcSet="/img-1-small.webp 600w, /img-1-medium.webp 1000w, /img-1-large.webp 1500w"
-                            sizes="(max-width: 600px) 300px, (max-width: 1000px) 600px, 1000px" className="user-image" loading="lazy" />
+                        <img src={profilepic} alt="User"  className="user-image" loading="lazy" />
                     </div>
                     <div className="content-column my-5 mx-5">
                         <h1 className='fs-1 fw-bold'>Hey 👋</h1>
