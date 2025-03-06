@@ -57,6 +57,9 @@
     .contact-button{
         margin-left: -20px;
     }
+    .resume-button{
+        margin-right: 100px;
+    }
     
 }
 
@@ -75,10 +78,8 @@
 }
 
 .contact-button, .resume-button {
-    margin-left: -20px; 
-    
-   
-    padding: 5px 20px;
+    margin-left: -20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -88,6 +89,7 @@
     background-color: #333;
     color: white;
     text-decoration: none;
+  
 }
 .contact-button:hover{
     background-color:white;
@@ -98,9 +100,11 @@
 .resume-button {
     background-color: #007bff;
     color: white;
+
 }
 .resume-button:hover{
     background-color: white;
     color: #007bff;
     border:1px solid black
 }
+

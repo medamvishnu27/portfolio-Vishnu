@@ -138,7 +138,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container" data-aos="zoom-in-up">
-      <h2 className='title-project'>Some <span className='about-title-name'>Projects </span> I've Built</h2>
+      <h2 className='title-project '>Some <span className='about-title-name'>Projects </span> I've Built</h2>
 
       <div className="category-buttons ">
         <span className='category-btn mx-2 ' onClick={() => handleCategoryChange('All')}> 

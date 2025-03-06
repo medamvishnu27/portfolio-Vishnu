@@ -20,10 +20,10 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-            <NavLink className="navbar-title" to="/">
+            <NavLink className="navbar-title mx-2" to="/">
                 Vishnu<span className='navbar-brand fs-2'>VRM.</span>
             </NavLink>
-            <button className="hamburger" onClick={toggleMenu}>
+            <button className="hamburger mx-3" onClick={toggleMenu}>
                 ☰
             </button>
             <div className={`navbar-links ${isOpen ? 'open' : ''}`}>

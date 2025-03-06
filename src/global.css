@@ -4,7 +4,6 @@ body {
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
-    background-color: black;
     position: relative;
     overflow-x: hidden;
 }
@@ -74,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p {
         top: 70px; /* Position below fixed navbar */
         left: 0;
         right: 0;
-        background-color: rgba(255, 255, 255, 0.9) !important;
+        background-color: rgb(255, 255, 255) !important;
         backdrop-filter: blur(10px);
         padding: 1rem;
         display: none;
