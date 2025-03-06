@@ -51,8 +51,8 @@ const Home = () => {
                     <h2 className='profile-name fs-1'>I'm Vishnu Vardhan Reddy Medam</h2>
                     <h3 className='profile-tilte fs-1 fw-bold'><span className='Home-text-title'>{title}</span> Developer</h3>
                     <h6 className='fs-5 fw-light '>A passionate and detail-oriented software developer with a solid academic background in Electronics & Communication Engineering and hands-on experience in creating user-friendly web and software applications. My goal is to contribute to impactful projects while continuously learning and growing as a developer.</h6>
-                    <button className="contact-button mx-5 my-4" to="/contact"> <span className="mx-2 fs-5"> <RiContactsFill/></span> Contact me</button>
-                    <button className="resume-button" onClick={downloadResume}> <span className="mx-2 fs-5"> <MdSimCardDownload/> </span>  Download Resume</button>
+                    <Link to="/contact"><button className="contact-button  my-4" to="/contact"> <span className=" mx-1 fs-5 "> <RiContactsFill/></span> Contactme</button></Link>
+                    <button className="resume-button mx-2" onClick={downloadResume}> <span className="  fs-5"> <MdSimCardDownload/> </span>  Download Resume</button>
                 </div>
             </div>
         </div>
