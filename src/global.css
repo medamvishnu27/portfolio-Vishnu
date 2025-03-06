@@ -7,6 +7,11 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+html, body {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Improves touch response */
+}
+
 #root {
     position: relative;
     z-index: 1;
