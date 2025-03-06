@@ -77,6 +77,12 @@ font-weight: bolder;}
   font-weight: bold;
   color: #212529;
 }
+.badge:hover{
+  border: 3px solid gray;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
 
 @media (max-width: 768px) {
   .section {

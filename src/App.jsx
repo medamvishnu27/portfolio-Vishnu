@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Certificates from './pages/Certificates';
 import WaveBackground from './components/WaveBackground'; // Updated import path
 
+
 const App = () => {
     return (
         <Router>

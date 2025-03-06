@@ -9,6 +9,7 @@ import About from './About';
 import Certificates from './Certificates';
 import Contact from './Contact';
 import Projects from './Projects';
+import profilepic from "../assets/img-1.png";
 
 
 const Home = () => {
@@ -44,7 +45,7 @@ const Home = () => {
         <div className="home mx-5" data-aos="fade-down">
             <div className="home-container">
                 <div className="image-column mx-5">
-                    <img src="./src/assets/img-1.png" alt="User" className="user-image" />
+                    <img src={profilepic} alt="User" className="user-image" />
                 </div>
                 <div className="content-column my-5 mx-5">
                     <h1 className='fs-1 fw-bold'>Hey 👋</h1>

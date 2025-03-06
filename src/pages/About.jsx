@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaDatabase, FaReact,  FaBootstrap, FaGithub, FaCodeBranch, FaLeaf } from 'react-icons/fa';
 import { TbBrandRedux } from "react-icons/tb";
+import aboutimg from "../assets/aboutimg.webp"
 import "./about.css"
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
           </div>
          
           <div className="col-12 col-sm-6 col-md-6 col-lg-6  section-image">
-            <img src="./src/assets/aboutimg.webp" alt="Developer Image" className='about-img' />
+            <img src={aboutimg} alt="Developer Image" className='about-img' />
           </div>
         </div>
       </div>
@@ -43,7 +44,7 @@ const About = () => {
             <p className='text-black'>Here you can see my skills, one of the fascinations of the computer world is the momentary changes of technologies, but I try to update my knowledge every day and experience new technologies.</p>
             <div className="skill-badges">
               <div className="skill-badges ">
-                <span className="badge p-3 fs-5" style={{ color: '#E34F26' ,} }><FaHtml5 /> HTML</span>
+                <span className="badge  p-3 fs-5" style={{ color: '#E34F26' ,} }><FaHtml5 /> HTML</span>
                 <span className="badge p-3  fs-5" style={{ color: '#1572B6' }}><FaCss3Alt /> CSS</span>
                 <span className="badge p-3  fs-5" style={{ color: '#F7DF1E' }}><FaJsSquare /> JavaScript</span>
                 <span className="badge p-3  fs-5" style={{ color: '#007396' }}><FaJava /> Java</span>
@@ -62,16 +63,16 @@ const About = () => {
             <p className='text-black'>One of my hobbies is studying and learning languages. I try to be able to learn and use my favorite languages.</p>
             <div className="language-cards">
               <div className="languagecard">
-                <div className="percentage">99%</div>
-                <div className="languages">telugu</div>
+                <div className="percentage text-black p-5">99%</div>
+                <div className="languages fw-bolder">Telugu</div>
               </div>
               <div className="languagecard">
-                <div className="percentage">70%</div>
-                <div className="languages">English</div>
+                <div className="percentage text-black p-5">70%</div>
+                <div className="languages fw-bolder">English</div>
               </div>
               <div className="languagecard">
-                <div className="percentage">50%</div>
-                <div className="languages">Hindi</div>
+                <div className="percentage text-black p-5">50%</div>
+                <div className="languages fw-bolder">Hindi</div>
               </div>
             </div>
           </div>

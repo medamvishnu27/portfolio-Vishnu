@@ -4,11 +4,10 @@ body {
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
-    background: black;
+    background-color: black;
     position: relative;
     overflow-x: hidden;
 }
-
 #root {
     position: relative;
     z-index: 1;
@@ -22,11 +21,17 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.299) !important;
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     height: 70px; /* Fixed height for navbar */
+}
+.navbar.scrolled {
+    border-radius: 20px; /* Rounded when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px;
+    width: calc(100% - 40px); /* Adjust width to prevent overflow */
 }
 
 .navbar-links {
