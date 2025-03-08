@@ -3,6 +3,7 @@ import React from 'react';
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
 import { CiMobile3 } from "react-icons/ci";
+import gradientImage from '/public/gradient3.png';
 
 const Contact = () => {
   function Alert(){
@@ -11,13 +12,13 @@ const Contact = () => {
   return (
     <div className="contact-container" >
       <h2 className='fs-1 fw-bold'>Get In Touch</h2>
-      <p className='fs-5 mb-5 text-black'>
+      <p className='fs-5 mb-5 text-white'>
         Here you can let me know if you have any  suggestion or problem, <br />
         I'm waiting to hear your voice or see your message.
       </p>
 
       <div className="card-container" data-aos="fade-down">
-        <div className="form-card">
+        <div className="form-card " style={{ backgroundImage: `url(${gradientImage})` }}>
           <h3 className='fw-bold'>What's up?</h3>
           <form>
             <div className="form-group">
@@ -47,7 +48,7 @@ const Contact = () => {
         </div>
 
         <div className="form-right  ">
-          <h3 className='fw-bold fs-2'>What is your plan? <br /> Call me</h3>
+          <h3 className='fw-bold fs-2 text-black'>What is your plan? <br /> Call me</h3>
           <p className='fs-5 text-black'>
             You can get my contact information here and if you like, you can see the
             URLs of my pages on social networks from the top of the page and find

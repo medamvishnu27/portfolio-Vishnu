@@ -6,7 +6,10 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    background-color: rgb(31, 30, 30); /* Set background to black */
+    color: white; /* Set text color to white */
 }
+
 html, body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* Improves touch response */
@@ -21,6 +24,8 @@ html, body {
 /* Fixed navbar styles */
 .navbar {
     position: fixed !important;
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Adjust navbar background for visibility */
+
     top: 0;
     left: 0;
     right: 0;
@@ -43,13 +48,13 @@ html, body {
 }
 
 .navbar-links a {
-    color: rgba(0, 0, 0, 0.8) !important;
+    color: rgba(248, 244, 244, 0.8) !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: rgba(0, 0, 0, 1) !important;
+    color: rgb(115, 17, 226) !important;
 }
 
 .active-link {
@@ -62,13 +67,17 @@ html, body {
 .form-card,
 .education-card,
 .certificates-section {
-    background-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Adjust card backgrounds for contrast */
+
     /* Removed backdrop-filter for mobile */
 }
 
 h1, h2, h3, h4, h5, h6, p {
     position: relative;
     z-index: 2;
+}
+.projects-container{
+    background-image: url(public/gradient2.png);
 }
 
 /* Responsive navbar */

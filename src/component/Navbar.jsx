@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-            <NavLink className="navbar-title mx-2" to="/">
+            <NavLink className="navbar-title mx-2 text-black" to="/">
                 Vishnu<span className='navbar-brand fs-2'>VRM.</span>
             </NavLink>
             <button className="hamburger mx-3" onClick={toggleMenu}>

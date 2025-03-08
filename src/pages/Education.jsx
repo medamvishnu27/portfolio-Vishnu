@@ -30,12 +30,12 @@ export default function Education() {
                         animationName: "fadeInLeft",
                       }}
                     >
-                      <p>2024</p>
+                      <p className="text-white">2024</p>
                     </div>
                     <div className="row">
-                      <div className="col-12 col-md-8 col-lg-9  ">
+                      <div className="col-12 col-md-8 col-lg-9 ">
                         <div
-                          className="single-timeline-content d-flex wow fadeInLeft"
+                          className="single-timeline-content d-flex wow fadeInLeft bg-secondary"
                           data-wow-delay="0.3s"
                           style={{
                             visibility: "visible",
@@ -46,7 +46,7 @@ export default function Education() {
                           <div className="timeline-icon">
                            <span className="text-white fs-4"> <FaGraduationCap/></span>
                           </div>
-                          <div className="timeline-text">
+                          <div className="timeline-text ">
                             <h6> Bachelor's Degree (E.C.E)</h6>
                             <p>Godavari Institute of Engineering and Technology,Rajahmundry,AndhraPradesh</p>
                             <div className="go-corner" href="#">
@@ -68,12 +68,12 @@ export default function Education() {
                         animationName: "fadeInLeft",
                       }}
                     >
-                      <p>2020</p>
+                      <p className="text-white">2020</p>
                     </div>
                     <div className="row">
                       <div className="col-12 col-md-8 col-lg-9">
                         <div
-                          className="single-timeline-content d-flex wow fadeInLeft"
+                          className="single-timeline-content d-flex wow fadeInLeft bg-secondary"
                           data-wow-delay="0.3s"
                           style={{
                             visibility: "visible",
@@ -107,12 +107,12 @@ export default function Education() {
                         animationName: "fadeInLeft",
                       }}
                     >
-                      <p>2018</p>
+                      <p className="text-white">2018</p>
                     </div>
                     <div className="row">
                       <div className="col-12 col-md-8 col-lg-9">
                         <div
-                          className="single-timeline-content d-flex wow fadeInLeft"
+                          className="single-timeline-content d-flex wow fadeInLeft bg-secondary"
                           data-wow-delay="0.3s"
                           id="line"
                           style={{

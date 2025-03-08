@@ -160,19 +160,19 @@ const Projects = () => {
         {projects.map((project) => (
           <div className="project-card" key={project.id}>
             <h3>{project.title}</h3>
-            <p className='text-black'>{project.description}</p>
-            <div className="project-details">
+            <p className='text-white'>{project.description}</p>
+            <div className="project-details  text-end py-2">
               {project.technologies.map((tech, index) => (
                 <span key={`${project.id}_${tech}_${index}`}>{tech}</span>
               ))}
             </div>
             <div className="link-buttons">
-              <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" className='mx-2 my-4'>
+              <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" className='mx-2 my-4 text-white'>
                 View Screenshots
-                <span className='mx-2'><LuScreenShare /></span>
+                <span className='mx-2 text-white'><LuScreenShare /></span>
               </a>
-              <a href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer" className='mx-2 my-4'>
-                Source Code <span className='fs-5 fw-bold mx-1'><FaGithub /></span>
+              <a href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer" className='mx-2 my-4 text-white'>
+                Source Code <span className='fs-5 fw-bold mx-1 text-white'><FaGithub /></span>
               </a>
             </div>
           </div>

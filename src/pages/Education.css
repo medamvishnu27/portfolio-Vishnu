@@ -12,11 +12,13 @@ body {
     position: relative;
     z-index: 1;
     padding-left: 180px;
+    
   }
   .single-timeline-area2 {
     position: relative;
     z-index: 1;
     padding-right: 50%;
+    
   }
   .go-corner {
     display: flex;
@@ -30,6 +32,7 @@ body {
     right: 0;
     background-color: red;
     border-radius: 0 4px 0 32px;
+    
   }
   
   .go-arrow {
@@ -83,7 +86,7 @@ body {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: #020710;
+    background-color: #5816c9;
     content: "";
     top: 50%;
     right: 26px;
