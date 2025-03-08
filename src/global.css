@@ -63,7 +63,7 @@ html, body {
 .education-card,
 .certificates-section {
     background-color: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(10px);
+    /* Removed backdrop-filter for mobile */
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p {
         left: 0;
         right: 0;
         background-color: rgb(255, 255, 255) !important;
-        backdrop-filter: blur(10px);
+        /* Removed backdrop-filter for mobile */
         padding: 1rem;
         display: none;
     }

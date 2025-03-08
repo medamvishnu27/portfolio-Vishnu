@@ -6,13 +6,13 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Certificates from './pages/Certificates';
-import WaveBackground from './components/WaveBackground'; // Updated import path
+
 
 
 const App = () => {
     return (
         <Router>
-            <WaveBackground />
+            {/* <WaveBackground /> */} {/* Removed reference to WaveBackground */}
             <div className="app-content" style={{ position: 'relative', zIndex: 1 }}>
                 <Navbar />
                 <Routes>
