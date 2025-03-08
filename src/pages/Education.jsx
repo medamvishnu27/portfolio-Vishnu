@@ -9,7 +9,7 @@ export default function Education() {
         <h1 className="project-title mx-4 fs-1 fw-bold  " style={{ textAlign: "justify" }}>
           Education
         </h1>
-        <div class="lines2"></div>
+        <div className="lines2"></div>
       </div>
       <div className="container-fluid mt-5 mb-5  d-flex justify-content-center"  data-aos="zoom-in">
         <section className="timeline_area section_padding_130">
