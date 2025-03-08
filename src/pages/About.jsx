@@ -14,18 +14,18 @@ const About = () => {
         <div className="row">
           <div className="col-md-6 section-text">
             <h1 className='fw-bolder fs-1 mb-3'>I love being a <br /> <span className='about-span'>developer!</span></h1>
-            <p className='fs-5 text-black'>I'm a Full-Stack Developer passionate about building and managing both the front-end and back-end of websites and web applications, ensuring seamless functionality and delivering impactful user experiences. Check out some of my work in the Projects section.</p>
-            <p className='fs-5 text-black'>I also enjoy sharing content about the knowledge and skills I've gained over the years in web development and programming. My goal is to support the developer community by providing valuable insights and resources. Feel free to connect with me on Linkedin or follow me on Instagram, where I regularly post useful content related to web development, programming, and the tech industry.</p>
-            <p className='fs-5 text-black'>I'm actively seeking job opportunities where I can contribute, learn, and grow. If you have an opportunity that aligns with my skills and experience, please don't hesitate to reach out. Let's build something amazing together!</p>
+            <p className='fs-5 text-white'>I'm a Full-Stack Developer passionate about building and managing both the front-end and back-end of websites and web applications, ensuring seamless functionality and delivering impactful user experiences. Check out some of my work in the Projects section.</p>
+            <p className='fs-5 text-white'>I also enjoy sharing content about the knowledge and skills I've gained over the years in web development and programming. My goal is to support the developer community by providing valuable insights and resources. Feel free to connect with me on Linkedin or follow me on Instagram, where I regularly post useful content related to web development, programming, and the tech industry.</p>
+            <p className='fs-5 text-white'>I'm actively seeking job opportunities where I can contribute, learn, and grow. If you have an opportunity that aligns with my skills and experience, please don't hesitate to reach out. Let's build something amazing together!</p>
         
             <div className="stats">
               <div className="stat">
                 <h3 className='text-warning fw-bold'>13</h3>
-                <p className='fs-5 text-black'>Completed projects</p>
+                <p className='fs-5 text-white'>Completed projects</p>
               </div>
               <div className="stat">
                 <h3 className='text-warning fw-bold'>10</h3>
-                <p className='fs-5 text-black'>Positive reviews</p>
+                <p className='fs-5 text-white'>Positive reviews</p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const About = () => {
         <div className="row">
           <div className="col-md-6 skills-section">
             <h2 className='text-center fw-bolder fs-1'>Skills</h2>
-            <p className='text-black'>Here you can see my skills, one of the fascinations of the computer world is the momentary changes of technologies, but I try to update my knowledge every day and experience new technologies.</p>
+            <p className='text-white'>Here you can see my skills, one of the fascinations of the computer world is the momentary changes of technologies, but I try to update my knowledge every day and experience new technologies.</p>
             <div className="skill-badges">
               <div className="skill-badges ">
                 <span className="badge  p-3 fs-5" style={{ color: '#E34F26' ,} }><FaHtml5 /> HTML</span>
@@ -60,19 +60,19 @@ const About = () => {
           </div>
           <div className="col-md-6 language-section">
             <h2 className='text-center fw-bolder fs-1'>Language skill</h2>
-            <p className='text-black'>One of my hobbies is studying and learning languages. I try to be able to learn and use my favorite languages.</p>
+            <p className='text-white'>One of my hobbies is studying and learning languages. I try to be able to learn and use my favorite languages.</p>
             <div className="language-cards">
               <div className="languagecard">
-                <div className="percentage text-black p-5">99%</div>
-                <div className="languages fw-bolder">Telugu</div>
+                <div className="percentage text-white p-5">99%</div>
+                <div className="languages fw-bolder text-black">Telugu</div>
               </div>
               <div className="languagecard">
-                <div className="percentage text-black p-5">70%</div>
-                <div className="languages fw-bolder">English</div>
+                <div className="percentage text-white p-5">70%</div>
+                <div className="languages fw-bolder text-black">English</div>
               </div>
               <div className="languagecard">
-                <div className="percentage text-black p-5">50%</div>
-                <div className="languages fw-bolder">Hindi</div>
+                <div className="percentage text-white p-5">50%</div>
+                <div className="languages fw-bolder text-black">Hindi</div>
               </div>
             </div>
           </div>

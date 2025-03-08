@@ -28,8 +28,8 @@
     text-decoration: none; 
   }
   .navbar-brand{
-    background: goldenrod;
-background: linear-gradient(to right, goldenrod 50%, #CFCCC8 100%);
+    background: rgb(17,48,219);
+    background: linear-gradient(137deg, rgba(17,48,219,1) 28%, rgba(244,178,6,1) 69%);
 background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: bolder;
@@ -124,8 +124,8 @@ font-weight: bolder;
     justify-content:space-around; /* Space out the cards */
 }
 .about-title-name{
-  background:goldenrod;
-background: linear-gradient(to right, goldenrod 80%, #CFCCC8 100%);
+  background: rgb(17,48,219);
+  background: linear-gradient(137deg, rgba(17,48,219,1) 28%, rgba(244,178,6,1) 69%);
 background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: bolder;
@@ -159,28 +159,29 @@ font-weight: bolder;
 
 .project-details {
     margin: 10px -15px;
+    
 }
 
 .project-details span {
     
     margin-right: 10px;
     border: 1px solid blueviolet;
-    color: blueviolet;
+    color: white;
     padding: 10px;
-    background-color: #fff; /* Light background for tech tags */
+    background-color: #000; /* Light background for tech tags */
     border-radius: 50px;
 }
 
 .link-buttons {
     display: flex;
-    justify-content: end;
+    justify-content: start;
    
 }
 
 .link-buttons a {
     text-decoration: none;
     color: black; /* Link color */
-    border: 1px solid black; /* Border for buttons */
+    border: 1px solid rgb(255, 255, 255); /* Border for buttons */
     border-radius: 5px;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
@@ -188,7 +189,7 @@ font-weight: bolder;
 
 .link-buttons a:hover {
     background-color: black; /* Change background on hover */
-    color: #fff; /* Change text color on hover */
+    color: #ffffff; /* Change text color on hover */
 }
 .category-buttons {
     display: flex;
@@ -204,6 +205,7 @@ font-weight: bolder;
 .category-btn:hover{
     
     text-decoration: underline;
+    color: blueviolet;
 
 }
 

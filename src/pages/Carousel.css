@@ -115,7 +115,7 @@
   width: 5rem;
   border-radius: 50%;
   border: 1px solid currentColor;
-  color: black;
+  color: blueviolet;
   cursor: pointer;
 }
 .carousel__btn svg {

@@ -24,6 +24,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 /* ... other styles ... */
 
 .language-cards {
@@ -46,8 +47,9 @@
 
 
 }
-.about-span{ background:goldenrod;
-background: linear-gradient(to right, goldenrod 80%, #CFCCC8 100%);
+.about-span{ 
+  background: rgb(17,48,219);
+  background: linear-gradient(137deg, rgba(17,48,219,1) 28%, rgba(244,178,6,1) 69%);
 background-clip: text;
 -webkit-text-fill-color: transparent;
 font-weight: bolder;}

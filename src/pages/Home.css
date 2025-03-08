@@ -4,6 +4,7 @@
     align-items: center;
     padding: 50px;
     text-decoration: none;
+    background-image: url(public/gradient2.png);
 }
 
 .home-container {
@@ -12,8 +13,8 @@
     /* Removed unnecessary max-width */
 }
 .Home-text-title{
-    background: goldenrod;
-    background: linear-gradient(to right, goldenrod 80%, #CFCCC8 100%);
+    background: rgb(17,48,219);
+background: linear-gradient(137deg, rgba(17,48,219,1) 28%, rgba(244,178,6,1) 69%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
@@ -28,7 +29,7 @@
 
 .user-image {
     width: 450px; /* Adjust size as needed */
-    border-radius: 40%; /* Circular image */
+    border-radius: 30%; /* Circular image */
 }
 
 .content-column {
